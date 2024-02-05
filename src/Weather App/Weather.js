@@ -49,7 +49,7 @@ const App = () => {
                 <p>Description: <b>{weather.weather[0].description}</b> <i class="fa-solid fa-cloud"></i></p>
                 <p>Country: <b>{weather.sys.country}</b> <i class="fa-solid fa-location-dot"></i></p>
               </div>
-            </div>) : (<><p>No City Found!!! 😣</p><br></br><p>Please Search For Another City</p></>)}
+            </div>) : (<div className='error'><p>No City Found!!! 😣</p><p>Please Search For Another City.</p></div>)}
         </div>}
       </section>
 

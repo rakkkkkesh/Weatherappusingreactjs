@@ -90,6 +90,18 @@ button:hover {
   margin-left: 10px;
 }
 
+.error{
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  background-color: rgba(175, 174, 174, 0.512);
+  border-radius: 10px;
+  padding: 10px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 600px) {
 .sec2 {
   width: 500px;
