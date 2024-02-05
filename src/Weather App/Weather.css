@@ -24,7 +24,7 @@
   color: #fff;
   border-radius: 30px;
   background: transparent;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
 }
 
 .sec-content{
@@ -69,9 +69,9 @@ button:hover {
   background-color: #FF1E57;
 }
 
-.cards marquee .city{
-  font-size: 1.5rem;
-  margin-top: 10px;
+.cards .city{
+  font-size: 1.2rem;
+  margin-top: 10px;  
 }
 
 .cards .contents{
@@ -82,7 +82,7 @@ button:hover {
 }
 
 .cards .contents p{
-  margin: 30px;
+  margin: 25px;
 }
 
 .cards .contents p i{
@@ -91,11 +91,27 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
+.sec2 {
+  width: 500px;
+  height: 700px;
+}
+
+.button {
+  margin: 0 0 20px 0;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cards .city{
+  margin-bottom: 40px;  
+}
   .cards .contents{
     flex-direction: column;
   }
   
   .cards .contents p{
-    margin: 10px 0;
+    margin: 15px 0;
   }
 }
