@@ -18,6 +18,7 @@ const App = () => {
       .then(res => res.json())
       .then(data => {
         setWeather(data);
+        console.log(data);
         setLoading(false);
       })
       .catch(error => {
@@ -42,11 +43,10 @@ const App = () => {
               <p className='city'>City Name: <b>{weather.name}, {weather.sys.country}</b></p>
               <div className='contents'>
                 <p>Temp: <b>{weather.main.temp}</b> <i class="fa-solid fa-temperature-high"></i></p>
-                <p>Clouds/Rain: <b>{weather.weather[0].main}</b> <i class="fa-solid fa-cloud"></i></p>
+                <p>Clouds/Rain: <b>{weather.weather[0].description}</b> <i class="fa-solid fa-cloud"></i></p>
                 <p>Wind Speed: <b>{weather.wind.speed}</b> <i class="fa-solid fa-gauge"></i></p>
                 <p>Humidity: <b>{weather.main.humidity}</b> <i class="fa-solid fa-droplet"></i></p>
                 <p>Pressure: <b>{weather.main.pressure}</b> <i class="fa-solid fa-gauge"></i></p>
-                <p>Description: <b>{weather.weather[0].description}</b> <i class="fa-solid fa-cloud"></i></p>
                 <p>Country: <b>{weather.sys.country}</b> <i class="fa-solid fa-location-dot"></i></p>
               </div>
             </div>) : (<div className='error'><p>{`${weather.message}!!! 😣`}</p></div>)}
