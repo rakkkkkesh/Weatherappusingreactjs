@@ -29,7 +29,7 @@ const App = () => {
     <div className='sec'>
       <section className='sec2'>
         <div className='sec-content'>
-          <h1>Wheather App</h1>
+          <h1>Weather App</h1>
           <input type={'text'} placeholder='Enter your city name' onChange={(e) => setCity(e.target.value)}></input>
           <br></br>
           <button className='button' onClick={search}>Search</button>
