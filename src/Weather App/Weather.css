@@ -17,14 +17,17 @@
 }
 
 .sec2 {
-  width: 600px;
-  height: 600px;
   padding: 40px;
   text-align: center;
   color: #fff;
-  border-radius: 30px;
-  background: transparent;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(62, 254, 244, 0.2);
+  width: 90%;
+  max-width: 600px;
+  height: auto;
 }
 
 .sec-content{
@@ -39,17 +42,49 @@ flex-direction: column;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+h1 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 
+    1px 1px 0 #333,
+    -1px -1px 0 #333,  
+    1px -1px 0 #333,  
+    -1px 1px 0 #333; 
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 
+    0.5px 0.5px 0 #333,
+    -0.5px -0.5px 0 #333,  
+    0.5px -0.5px 0 #333,  
+    -0.5px 0.5px 0 #333; 
+}
+
 input {
   width: 80%;
-  border: none;
+  border: 2px solid #ffffff;
   border-radius: 30px;
-  box-shadow: 4px 4px 10px rgba(255, 61, 119, 0.3);
+  box-shadow: 0px 0px 10px rgba(44, 230, 247, 0.8);
   text-align: center;
-  margin: 20px;
+  margin: 5px;
   padding: 12px;
   font-size: 16px;
+  outline: none;
   color: #333;
+  transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
+
+input:focus {
+  border: 2px solid #3bf0f6;
+  box-shadow: 0 0 10px rgba(206, 61, 255, 0.8);
+}
+
 
 .button {
   width: 80%;
@@ -58,7 +93,7 @@ input {
   border: none;
   border-radius: 30px;
   box-shadow: 4px 4px 10px rgba(255, 61, 119, 0.3);
-  margin: 20px 0;
+  margin-bottom: 20px;
   padding: 12px 24px;
   font-size: 16px;
   cursor: pointer;
@@ -111,25 +146,33 @@ button:hover {
 @media screen and (max-width: 600px) {
 .sec2 {
   width: 500px;
-  height: 700px;
+  height: auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 .button {
   margin: 0 0 20px 0;
   padding: 12px 24px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .cards .city{
-  margin-bottom: 40px;  
+  margin-bottom: 15px;  
 }
   .cards .contents{
     flex-direction: column;
   }
   
   .cards .contents p{
-    margin: 15px 0;
+    margin: 5px 0;
   }
 }
